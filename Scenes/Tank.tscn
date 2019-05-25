@@ -11,14 +11,16 @@ script = ExtResource( 1 )
 polygon = PoolVector2Array( -12.5823, -17.8641, -16.7484, -14.1871, -16.7484, 14.047, -11.6138, 17.7787, 11.0505, 17.7787, 16.8618, 14.2919, 16.8618, -13.7962, 12.7939, -17.6704 )
 
 [node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
 texture = ExtResource( 2 )
 
 [node name="Barrel" type="Node2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Barrel"]
+rotation = 1.5708
 texture = ExtResource( 3 )
 offset = Vector2( -0.0386448, -8.68275 )
 
 [node name="Muzzle" type="Position2D" parent="Barrel"]
-position = Vector2( -0.0449848, -32.0037 )
+position = Vector2( 30.9955, -0.0366096 )
 
