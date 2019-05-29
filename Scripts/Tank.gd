@@ -25,7 +25,8 @@ func _process(delta):
 			bullet.global_position=$Barrel/Muzzle.global_position
 			#Modificar a direção dos tiros
 			bullet.dir=Vector2(cos(rotation),sin(rotation)).normalized()#Normalized normaliza a velocidade(ou comprimento) do objeto
-			get_parent().add_child(bullet)	
+			get_parent().add_child(bullet)
+			$Barrel/Anim.play("Fire")	
 			
 	#Faz o objeto girar na direção do mouse
 	look_at(get_global_mouse_position())
