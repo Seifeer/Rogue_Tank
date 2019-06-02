@@ -1,6 +1,6 @@
 extends Area2D
 
-var SPEED=250
+var SPEED=400
 var dir=Vector2(0, -1) setget set_dir
 
 

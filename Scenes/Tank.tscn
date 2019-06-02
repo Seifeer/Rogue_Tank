@@ -66,12 +66,13 @@ texture = ExtResource( 3 )
 offset = Vector2( -0.0386448, -8.68275 )
 
 [node name="Muzzle" type="Position2D" parent="Barrel"]
-position = Vector2( 30.9955, -0.0366096 )
+position = Vector2( 44.714, 0 )
 
 [node name="Fire" type="Sprite" parent="Barrel"]
 visible = false
 position = Vector2( 42.5808, 0.463287 )
 rotation = -1.5708
+z_index = 10
 texture = ExtResource( 4 )
 
 [node name="Anim" type="AnimationPlayer" parent="Barrel"]
