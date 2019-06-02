@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/Tank.gd" type="Script" id=1]
-[ext_resource path="res://sprites/tankBody_red.png" type="Texture" id=2]
-[ext_resource path="res://sprites/tankRed_barrel1_outline.png" type="Texture" id=3]
+[ext_resource path="res://sprites/tankBody_huge.png" type="Texture" id=2]
+[ext_resource path="res://sprites/tankDark_barrel1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/shotRed.png" type="Texture" id=4]
 [ext_resource path="res://sprites/shotLarge.png" type="Texture" id=5]
 [ext_resource path="res://sprites/shotOrange.png" type="Texture" id=6]

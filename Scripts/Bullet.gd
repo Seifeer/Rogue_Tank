@@ -18,7 +18,7 @@ func _on_Notifier_screen_exited():
 #Função para girar a bullet na direção do clique do mouse
 func set_dir(val):
 	#Mostra o angulo do val
-	print(val)
+	#print(val)
 	dir=val
 	#altera a rotação de acordo com o angulo da direção do tiro
 	rotation=dir.angle()

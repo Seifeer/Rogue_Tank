@@ -5,5 +5,14 @@
 [node name="Test_area" type="Node"]
 
 [node name="Tank" parent="." instance=ExtResource( 1 )]
-position = Vector2( 297.6, 318.38 )
+position = Vector2( 390.823, 244.997 )
+rotation = 4.66399
+bodie = 3
+barrel = 1
+
+[node name="Tank2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 427.35, 465.634 )
+rotation = -33.0458
+bodie = 3
+barrel = 2
 
