@@ -67,7 +67,7 @@ func _process(delta):
 			
 	look_at(get_global_mouse_position())
 	
-	translate(Vector2(dir_x,dir_y)*delta*SPEED)
+	move_and_slide(Vector2(dir_x,dir_y)*SPEED)
 	
 #Função para atualizar texturas durante o modo de edição(legal)	
 func set_bodie(val):
