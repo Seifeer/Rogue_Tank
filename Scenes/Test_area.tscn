@@ -34,6 +34,7 @@ bodie = 3
 barrel = 2
 
 [node name="Walls" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 467.569, 47.0188 )
 
 [node name="Cirlde" type="CollisionShape2D" parent="Walls"]
@@ -55,4 +56,3 @@ shape = SubResource( 4 )
 [node name="Wall4" type="CollisionShape2D" parent="Walls"]
 position = Vector2( 342.365, 253.053 )
 shape = SubResource( 5 )
-

@@ -1,7 +1,7 @@
 tool
 extends KinematicBody2D
 
-#Carregaavariavel quanto todo o script ta pronto
+#Carregaa variavel quanto todo o script ta pronto
 onready var BULLET_TANK_GROUP="Bullet-"+str(self)
 var SPEED=100
 #preload carrega uma packed scene,como se pre carregasse a cena para rodar no nó(esperando um comando)
