@@ -49,6 +49,7 @@ tracks/2/keys = {
 }
 
 [node name="Tank" type="KinematicBody2D"]
+collision_mask = 3
 script = ExtResource( 1 )
 
 [node name="Poly" type="CollisionPolygon2D" parent="."]
@@ -78,4 +79,3 @@ texture = ExtResource( 4 )
 [node name="Anim" type="AnimationPlayer" parent="Barrel"]
 playback_speed = 2.0
 anims/Fire = SubResource( 1 )
-

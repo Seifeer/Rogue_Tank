@@ -4,12 +4,12 @@
 [ext_resource path="res://sprites/smokeWhite1.png" type="Texture" id=2]
 [ext_resource path="res://sprites/bulletRed1_outline.png" type="Texture" id=3]
 
-[sub_resource type="Gradient" id=5]
+[sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.654321, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 0.423529, 0.419608, 0.419608, 1, 1, 1, 1, 0 )
 
-[sub_resource type="GradientTexture" id=6]
-gradient = SubResource( 5 )
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
 
 [sub_resource type="Curve" id=3]
 min_value = 0.2
@@ -19,17 +19,18 @@ _data = [ Vector2( 0, 0.0174991 ), 0.0, 1.44093, 0, 0, Vector2( 0.990741, 1.9880
 [sub_resource type="CurveTexture" id=4]
 curve = SubResource( 3 )
 
-[sub_resource type="ParticlesMaterial" id=2]
+[sub_resource type="ParticlesMaterial" id=5]
 flag_disable_z = true
 gravity = Vector3( 0, 0, 0 )
+angular_velocity = 1.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 0.1
 scale_random = 0.1
 scale_curve = SubResource( 4 )
-color_ramp = SubResource( 6 )
+color_ramp = SubResource( 2 )
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id=6]
 radius = 3.89321
 height = 6.24649
 
@@ -43,7 +44,7 @@ position = Vector2( -8.74078, 0.047554 )
 amount = 15
 lifetime = 0.3
 local_coords = false
-process_material = SubResource( 2 )
+process_material = SubResource( 5 )
 texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -52,10 +53,9 @@ texture = ExtResource( 3 )
 
 [node name="Shape" type="CollisionShape2D" parent="."]
 rotation = 1.5708
-shape = SubResource( 1 )
+shape = SubResource( 6 )
 
 [node name="Notifier" type="VisibilityEnabler2D" parent="."]
 position = Vector2( -1.11759e-07, 0.0711977 )
 scale = Vector2( 0.71521, 0.409062 )
-
 [connection signal="screen_exited" from="Notifier" to="." method="_on_Notifier_screen_exited"]

@@ -20,22 +20,18 @@ extents = Vector2( 15.1929, 228.721 )
 [node name="Test_area" type="Node"]
 
 [node name="Tank" parent="." instance=ExtResource( 1 )]
-position = Vector2( 390.823, 244.997 )
-rotation = 4.66399
-collision_layer = 0
-collision_mask = 0
-bodie = 3
-barrel = 1
+position = Vector2( 561.029, 198.698 )
+bodie = 1
 
 [node name="Tank2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 427.35, 465.634 )
-rotation = -33.0458
-bodie = 3
-barrel = 2
+position = Vector2( 340.903, 243.502 )
+bodie = 4
+barrel = 3
 
 [node name="Walls" type="StaticBody2D" parent="."]
-editor/display_folded = true
 position = Vector2( 467.569, 47.0188 )
+collision_layer = 2
+collision_mask = 0
 
 [node name="Cirlde" type="CollisionShape2D" parent="Walls"]
 position = Vector2( 23.1552, 238.167 )

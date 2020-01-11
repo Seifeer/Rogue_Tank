@@ -2,9 +2,11 @@ extends Area2D
 
 var SPEED=400
 var dir=Vector2(0, -1) setget set_dir
+onready var init_pos= global_position
+#Esse "onready" serve para iniciar a variavel dentro da função ready
 
-
-func _ready():
+func _ready():#Essa função inicia quando o node entra em cena
+	print(init_pos)
 	pass
 
 func _process(delta):
